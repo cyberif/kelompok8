@@ -7,7 +7,7 @@ Langkah-langkahnya :
    
 2. buat user baru misal
 
-  <span style="color:red">CREATE USER</span> 'staff'@'localhost' IDENTIFIED BY 'staffvioletfilm';
+  CREATE USER 'staff'@'localhost' IDENTIFIED BY 'staffvioletfilm';
   
   azzah253 itu password yaa
   
@@ -23,3 +23,4 @@ Langkah-langkahnya :
     GRANT(perintah memberi akses) -> akses yang diberikan -> tabel yang mana -> memberi ke user siapa
     
     GRANT select, insert, update ON product TO 'staff'@'localhost' IDENTIFIED BY 'staffvioletfilm';
+<font color="green"> Some green text </font>
