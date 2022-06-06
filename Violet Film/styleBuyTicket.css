@@ -1,0 +1,236 @@
+/* BUY TICKET */
+
+.content-buyTicket{
+    text-transform: capitalize;
+    margin-top: 0.1vh;
+    height: 83.9vh;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: lightslategray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.movie-container{
+    margin: 20px 0;
+}
+
+.movie-container select{
+    background-color: aliceblue;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 10px;
+    padding: 5px 15px 5px;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.container{
+    padding-top: 10vh;
+    perspective: 1000px;
+    margin-bottom: 30px;
+}
+
+.judul-box{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.boxJadwal{
+    margin-right: 10px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boxJam{
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding: 5px;
+    background-color: #be0000 ;
+    font-size: 15px;
+    color: aliceblue;
+    font-weight: 600;
+}
+
+.boxJam:not(.sold):hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.jadwal.selected{
+    background-color: green;
+}
+
+.seat{
+    background-color: #be0000 ;
+    height: 26px;
+    width: 28px;
+    margin: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    align-items: center;
+}
+
+.nameSeat{
+    font-size: 12px;
+    color: aliceblue;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 4px;
+}
+
+
+.selected{
+    background-color: green;
+}
+
+.sold{
+    background-color: rgb(10, 10, 31);
+}
+
+.available{
+    background-color: #be0000 ;
+}
+
+.seat:nth-of-type(6){
+    margin-right: 18px;
+}
+
+.seat:nth-last-of-type(11){
+    margin-left: 18px;
+}
+
+.seat:not(.sold):hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.showcase .seat:not(.sold):hover{
+    cursor: default;
+    transform: scale(1);
+}
+
+.showcase{
+    /* margin-right: 5px; */
+    margin-left: 30px;
+    border: black solid;
+    background-color: lightslategray;
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: black;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.buyText{
+    padding-top: 10px;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: 800;
+    cursor: default;
+}
+
+.showcase ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.showcase li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.tombol-buyticket{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3px;
+    padding: 10px;
+    background-color: crimson;
+    border-radius: 8px;
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.tombol-buyticket:hover{
+    background-color: rgb(163, 15, 45);
+    transition: all .3s ease-in-out;
+    transform: scale(0.96);
+}
+
+.tombol-buyticket>a:hover{
+    color: yellow;
+    transition: all .3s ease-in-out;
+    
+}
+
+.tombol-buyticket>a{
+    font-size: 13px;
+    text-align: center;
+    color: aliceblue;
+    font-weight: lighter;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.screen{
+    background-color: #d6d6d6;
+    height: 20px;
+    width: 700px;
+    margin: 15px 0;
+    align-items: center;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.box-total{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.totalIsi{
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid black; */
+}
+
+p.text{
+    font-size: 16px;
+    font-weight: 700;
+    margin: 5px 0;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: row;
+    cursor: default;
+}
+
+p.info{
+    font-size: 12px;
+    padding-top: 7px;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+

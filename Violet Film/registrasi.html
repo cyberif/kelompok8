@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi- Violet Film</title>
+    <link rel="stylesheet" href="styleLogin.css">
+</head>
+<body>
+    <div class="content-form">
+        <div class="form-registrasi">
+            <div class="formHead">
+                <h2>registrasi</h2>
+            </div>
+            <div class="formIsi">
+                <form action="" method="post">
+                    <div class="formName">
+                        <label for=""><p>Nama depan</p>
+                            <input type="text" name="firstname" id="firstname">
+                        </label>
+                        <label for=""><p>Nama belakang</p>
+                            <input type="text" name="lastname" id="lastname">
+                        </label>    
+                    </div>
+                    <div class="formAlamat">
+                        <div class="provinsi List">
+                            <label for="provinsi">provinsi</label>
+                                <select name="provinsi" id="provinsi">
+                                    <option value="Jawa Tengah">Jawa Tengah</option>
+                                    <option value="Jawa Tengah">Jawa Tengah</option>
+                                    <option value="Jawa Tengah">Jawa Tengah</option>
+                                    <option value="Jawa Tengah">Jawa Tengah</option>
+                                    <option value="Jawa Tengah">Jawa Tengah</option>
+                                </select>
+                        </div>
+                        <div class="kabKota">
+                            <label for="kabKota">Kab./Kota</label>
+                                <select name="kabKota" id="kabKota">
+                                    <option value="Kab.Tegal">Kab.Tegal</option>
+                                    <option value="Kab.Tegal">Kab.Tegal</option>
+                                    <option value="Kab.Tegal">Kab.Tegal</option>
+                                    <option value="Kota Semarang">Kota Semarang</option>
+                                    <option value="Kota Tegal">Kota Tegal</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="formOther">
+                        <label for="">
+                            <p>no. telepon</p>
+                            <input type="text" name="phoneNumber" id="phoneNumber" maxlength="15">
+                        </label>
+                        <label for="">
+                            <p>username</p>
+                            <input type="text" name="username" id="username">
+                        </label>
+                        <label for="">
+                            <p>password</p>
+                            <input type="password" name="password" id="password">
+                        </label>
+                        <label for="">
+                            <p>confirm password</p>
+                            <input type="password" name="confirmPassword" id="confirmPassword">
+                        </label>
+                    </div>
+                    <div class="formButton">
+                        <button type="submit" onclick="registrasi()">Submit</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                    <div class="formFoot">
+                        <button class="loginButton" type="button" onclick="loginPage()">login page</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
