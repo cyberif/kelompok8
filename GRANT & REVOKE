@@ -23,4 +23,5 @@ Langkah-langkahnya :
     GRANT(perintah memberi akses) -> akses yang diberikan -> tabel yang mana -> memberi ke user siapa
     
     GRANT select, insert, update ON product TO 'staff'@'localhost' IDENTIFIED BY 'staffvioletfilm';
-<font color="green"> Some green text </font>
+
+<p style='color:red'>This is some red text.</p>
