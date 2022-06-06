@@ -24,4 +24,35 @@ Langkah-langkahnya :
     
     GRANT select, insert, update ON product TO 'staff'@'localhost' IDENTIFIED BY 'staffvioletfilm';
 
-<p style='color:red'>This is some red text.</p>
+Langkah-langkahnya :
+1. masuk seperti biasa mysql -u root -p
+
+2. menggunakan db mysql 
+
+   use mysql;
+   
+2. buat user baru misal
+
+  CREATE USER 'staff'@'localhost' IDENTIFIED BY 'staffvioletfilm';
+  
+  azzah253 itu password yaa
+  
+3. untuk melihatnya kita bisa ketik
+
+   SELECT user, host, password FROM user;
+  
+4. lalu kita akan memberi akses user
+5. misal kita ingin memberi akses ke user di db_ikanhias_azzah
+
+    use db_ikanhias_azzah;
+   
+    GRANT(perintah memberi akses) -> akses yang diberikan -> tabel yang mana -> memberi ke user siapa
+    
+    GRANT select, insert, update ON product TO 'staff'@'localhost' IDENTIFIED BY 'staffvioletfilm';
+
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+```
