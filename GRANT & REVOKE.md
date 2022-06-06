@@ -1,53 +1,30 @@
-Langkah-langkahnya :
-1. masuk seperti biasa mysql -u root -p
+<h1>GRANT & REVOKE</h1>
+<h3>GRANT</h3>
+<h5>Langkah-langkahnya :</h5>
+<ol>
+   <li>Masuk seperti biasa <b>mysql -u root -p</b></li>
+   <li>
+      <p>Menggunakan <i>db mysql</i></p>
+      <p><b>use mysql;</b></p>
+   </li>
+   <li>
+      <p>Membuat user baru misal</p>
+      <p><b>CREATE USER 'staff'@'localhost' IDENTIFIED BY 'staffvioletfilm';</b></p>
+      <p>staffvioletfilm itu passwordnya yaa</p>
+   </li>
+   <li>
+      <p>Untuk melihatnya kita bisa ketik</p>
+      <p><b>SELECT user, host, password FROM user;</b></p>
+   </li>
+   <li>
+      <p>Lalu kita akan memberi akses user</p>
+   </li>
+   <li>
+      <p>Misal kita ingin memberi akses ke user di <i>db_ikanhias_azzah</i></p>
+      <p><b>use db_ikanhias_azzah;</b></p>
+      <p><b>GRANT select, insert, update ON product TO 'staff'@'localhost' IDENTIFIED BY 'staffvioletfilm';</b></p>
+       <p><i>GRANT(perintah memberi akses) -> akses yang diberikan -> tabel yang mana -> memberi ke user siapa</i></p>
+   </li>
+</ol>
 
-2. menggunakan db mysql 
-
-   use mysql;
-   
-2. buat user baru misal
-
-  CREATE USER 'staff'@'localhost' IDENTIFIED BY 'staffvioletfilm';
-  
-  azzah253 itu password yaa
-  
-3. untuk melihatnya kita bisa ketik
-
-   SELECT user, host, password FROM user;
-  
-4. lalu kita akan memberi akses user
-5. misal kita ingin memberi akses ke user di db_ikanhias_azzah
-
-    use db_ikanhias_azzah;
-   
-    GRANT(perintah memberi akses) -> akses yang diberikan -> tabel yang mana -> memberi ke user siapa
-    
-    GRANT select, insert, update ON product TO 'staff'@'localhost' IDENTIFIED BY 'staffvioletfilm';
-
-Langkah-langkahnya :
-1. masuk seperti biasa mysql -u root -p
-
-2. menggunakan db mysql 
-
-   use mysql;
-   
-2. buat user baru misal
-
-  CREATE USER 'staff'@'localhost' IDENTIFIED BY 'staffvioletfilm';
-  
-  azzah253 itu password yaa
-  
-3. untuk melihatnya kita bisa ketik
-
-   SELECT user, host, password FROM user;
-  
-4. lalu kita akan memberi akses user
-5. misal kita ingin memberi akses ke user di db_ikanhias_azzah
-
-    use db_ikanhias_azzah;
-   
-    GRANT(perintah memberi akses) -> akses yang diberikan -> tabel yang mana -> memberi ke user siapa
-    
-    GRANT select, insert, update ON product TO 'staff'@'localhost' IDENTIFIED BY 'staffvioletfilm';
-
-__TERIMA KASIH__
+__TERIMA KASIH<br>SEMOGA BERMANFAAT__
