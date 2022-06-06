@@ -7,7 +7,7 @@ Langkah-langkahnya :
    
 2. buat user baru misal
 
-  <span color="red">CREATE USER</span> 'staff'@'localhost' IDENTIFIED BY 'staffvioletfilm';
+  <span style="color:red">CREATE USER</span> 'staff'@'localhost' IDENTIFIED BY 'staffvioletfilm';
   
   azzah253 itu password yaa
   
