@@ -50,4 +50,4 @@ Langkah-langkahnya :
     
     GRANT select, insert, update ON product TO 'staff'@'localhost' IDENTIFIED BY 'staffvioletfilm';
 
-*aaaaa*
+__TERIMA KASIH__
