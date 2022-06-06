@@ -2,16 +2,24 @@ Langkah-langkahnya :
 1. masuk seperti biasa mysql -u root -p
 
 2. menggunakan db mysql 
+
    use mysql;
    
 2. buat user baru misal
+
   CREATE USER 'azzah'@'localhost' IDENTIFIED BY 'azzah253';
+  
   azzah253 itu password yaa
   
 3. untuk melihatnya kita bisa ketik
+
    SELECT user, host, password FROM user;
   
 4. lalu kita akan memberi akses user
-    GRANT(perintah memberi akses)-> akses yang diberikan -> memberi ke user siapa
+5. misal kita ingin memberi akses ke user di db_ikanhias_azzah
+
+    use db_ikanhias_azzah;
+   
+    GRANT(perintah memberi akses) -> akses yang diberikan -> tabel yang mana -> memberi ke user siapa
     
     GRANT select, insert, update ON product TO azzah@localhost IDENTIFIED BY 'azzah253';
