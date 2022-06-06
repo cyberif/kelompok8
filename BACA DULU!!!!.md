@@ -1,8 +1,9 @@
 # kelompok8
-Cara Simpan
+<h2>CARA SIMPAN FILE</h2>
 
-Nama HARUS sama. misal,
-lagi ngerjain file tugas1.docx 
-pas mau nyimpen disini namanya juga harus tugas1.docx
-
-thankkssss
+```diff
+- Nama HARUS sama. Misal,
++ lagi ngerjain file tugas1.docx 
+! pas mau nyimpen disini namanya juga harus tugas1.docx
+```
+__THANKS YOU :)__
