@@ -20,8 +20,8 @@
       <p>Lalu kita akan memberi akses user</p>
    </li>
    <li>
-      <p>Misal kita ingin memberi akses ke user di <i>db_ikanhias_azzah</i></p>
-      <p><b>use db_ikanhias_azzah;</b></p>
+      <p>Misal kita ingin memberi akses ke user di <i>db_bioskop</i></p>
+      <p><b>use db_bioskop;</b></p>
       <p><b>GRANT select, insert, update ON product TO 'staff'@'localhost' IDENTIFIED BY 'staffvioletfilm';</b></p>
        <p><i>GRANT(perintah memberi akses) -> akses yang diberikan -> tabel yang mana -> memberi ke user siapa</i></p>
    </li>
