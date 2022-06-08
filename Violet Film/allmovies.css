@@ -2,10 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
-}
-
-.content.all-movies{
-    height: 150vh;
+    scroll-behavior: smooth;
 }
 
 nav{
@@ -15,7 +12,7 @@ nav{
 .fContainer{
     display: flex;
     width: 100%;
-    height: 16vh;
+    height: 18vh;
     background-color: lightslategray;
 }
 
@@ -30,7 +27,6 @@ nav{
     background-color: #222;
     box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.5);
 }
-
 
 .brand>a{
     display: flex;
@@ -80,102 +76,74 @@ nav{
 }
 
 .content{
-    background-color: lightslategrey;
-    height: 100vh;
+    background-color: lightslategray;
+    padding-left: 15px;
+    padding-right: 10px;
 }
 
-.text-now-playing{
-    /* background-color: lightslategray; */
-    text-transform: capitalize;
-    padding: 5px;
-}
-
-.text-now-playing>h1{
+.judul-content{
+    font-size: 28px;
     color: aliceblue;
     margin-left: 5px;
+    margin-bottom: 20px;
     text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.7);
-}
-
-.wrapper-slider{
-    display: flex;
-    padding: 20px;
-    /* background-color: lightslategray; */
-}
-
-.slider {
-  width: 100%;
-  text-align: center;
-  overflow: hidden;
-  margin:0;
-  
-}
-
-.slides {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    height: auto;
-}
-
-.slides::-webkit-scrollbar { width: 3px; height: 3px; }
-.slides::-webkit-scrollbar-thumb { background: darkviolet; border-radius: 5px; }
-.slides::-webkit-scrollbar-track { background: transparent; }
-
-.box-poster{
-    margin-top: 5px;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
+    text-transform: capitalize;
+    text-align: center;
     align-items: center;
 }
 
-.poster:hover{
-    transform: scale(1.01);
-    transition-duration: .5s;
-    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.9);
+.all-poster{
+    display: flex;
+    flex-direction: column;
 }
 
 .poster{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid rgba(36, 36, 36, 0.5);
     border-radius: 5px;
-    width: 150px;
-    height: 250px;
-    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: space-around;
 }
 
-.judul-poster{
-    width: 180px;
+.poster-img{
+    width: 145px;
+    height: 225px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.poster-img>img{
+    border-radius: 5px;
+    width: 120px;
+    height: 200px;
+}
+
+.poster-info{
     display: flex;
     flex-direction: column;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
     color: rgb(255, 255, 255);
     text-transform: capitalize;
     text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.5)
 }
 
-.text-genre{
-    width: 180px;
+.box-tombol{
+    margin-top:0;
     display: flex;
     flex-direction: column;
-    font-size: 15px;
-    color: aliceblue;
-    text-transform: capitalize;
-    text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.5)
-}
-
-.box-tombol{
-    margin-top: 5px;
+    justify-content: space-around;
 }
 
 .tombol-trailer{
-    padding: 5px;
+    padding: 18px;
     background-color: rgb(63, 187, 5);
     border-radius: 8px;
     box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.5);
     align-items: center;
-    justify-content: center;
 }
 
 .tombol-trailer:hover{
@@ -191,7 +159,7 @@ nav{
 }
 
 .tombol-trailer>a{
-    font-size: 13px;
+    font-size: 19px;
     color: aliceblue;
     font-weight: lighter;
     text-transform: capitalize;
@@ -200,8 +168,8 @@ nav{
 }
 
 .tombol-buyticket{
-    margin-top: 3px;
-    padding: 5px;
+    margin-top: 8px;
+    padding: 18px;
     background-color: darkmagenta;
     border-radius: 8px;
     box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.5);
@@ -220,12 +188,15 @@ nav{
 }
 
 .tombol-buyticket>a{
-    font-size: 13px;
+    font-size: 19px;
     color: aliceblue;
     font-weight: lighter;
     text-transform: capitalize;
     text-decoration: none;
 }
+
+
+
 
 
 .facebook {
@@ -329,11 +300,3 @@ nav{
     background: darkgrey;
     border-radius: 5px;
 }
-
-
-.allposter{
-    border: 50px solid black;
-}
-
-
-
